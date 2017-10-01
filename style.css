@@ -1,0 +1,260 @@
+html,
+body {
+    height: 100%;
+    background: #f2f2f2;
+    margin: 10px 0 30px 0;
+}
+
+h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+}
+
+a
+  {
+    color: black;
+  }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.nombre {
+    padding: 0 0 5px 10px;
+    color: black;
+    text-align: left;
+    font-family: Montserrat, sans-serif !important;
+    letter-spacing: 2px;
+}
+
+.thumbnail {
+    padding: 0 0 0 0;
+    font-size: 14px;
+    width: 100%;
+    position: center;
+    margin: auto;
+    line-height: 18px;
+    color: black;
+}
+
+.about {
+    font-size: 14px;
+    width: 95%;
+    position: center;
+    margin: 0 0 0 .5em;
+    line-height: 18px;
+    color: black;
+}
+
+.title {
+    padding: 0 0 10px 0;
+    color: black;
+    text-align: left;
+    font-family: Montserrat, sans-serif !important;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.individual {
+    width: 100% !important;
+    padding: 0 5% 0 5%;
+
+}
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem;
+    background: white;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.control2 {
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: black;
+    transition: background 150ms;
+    background: #f1f1f1;
+}
+
+.control2:active {
+    background: white !important;
+}
+
+.control2:hover {
+    background: white;
+}
+
+.control {
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 2rem;
+    background: white;
+    cursor: pointer;
+    font-size: 12px;
+    color: black;
+    transition: background 150ms;
+}
+
+.control:hover {
+    background: #f2f2f2;
+}
+
+.control[data-filter]:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    border-radius: 2px;
+    transition: background-color 150ms, border-color 150ms;
+}
+
+.mixitup-control-active {
+    background: #f1f1f1;
+}
+
+.mixitup-control-active[data-filter]:after {
+    background: transparent;
+}
+
+.control:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.control:last-of-type {
+    border-radius: 0 3px 3px 0;
+}
+
+        /*Color botton inactivo
+
+.control[data-filter=".design"] {
+    color: #91e6c7;
+}
+
+.control[data-filter=".craft"] {
+    color: #5ecdde;
+}
+
+.control[data-filter=".art"] {
+    color: #d595aa;
+}
+
+.control[data-filter="none"] {
+    color: #2f2f2f;
+}
+
+*/
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+    padding-top: 6em;
+    text-align: justify;
+    font-size: 14px;
+
+}
+
+.container:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Target Elements Color Borde Superior
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: transparent;
+    /* border-top: .5rem solid currentColor; */
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.mix:before {
+    content: '';
+    display: inline-block;
+    /* padding-top: 56.25%; */
+}
+
+.mix.design {
+    color: #D8E2E7;
+}
+
+.mix.art {
+    color: #E5DCE1;
+}
+
+.mix.craft {
+    color: #E7E6DD;
+}
+
+.mix.about {
+    color: #f1f1f1;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix,
+.gap {
+    width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
+}
+
+/* 1 Columns */
+
+@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
+    }
+}
+
+/* 2 Columns */
+
+@media screen and (min-width: 961px) {
+    .mix,
+    .gap {
+        width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 1281px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+    }
+}
+
+
