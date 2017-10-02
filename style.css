@@ -84,6 +84,7 @@ p {
 
 .controls a{
     font-family: Montserrat, sans-serif;
+    cursor: pointer;
     text-align: center;
     padding-top: 8px;
     position: relative;
