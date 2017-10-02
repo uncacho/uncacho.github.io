@@ -82,41 +82,31 @@ p {
     font-size: 18px;
 }
 
-.control2 {
+.controls a{
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    padding-top: 8px;
     position: relative;
     display: inline-block;
     width: 8rem;
     height: 2rem;
     cursor: pointer;
     font-size: 14px;
-    font-family: Montserrat, sans-serif;
     color: black;
     transition: background 150ms;
-    background: #f1f1f1;
-}
-
-.control2:active {
-    background: white !important;
-}
-
-.control2:hover {
     background: white;
 }
 
-.control {
-    position: relative;
-    display: inline-block;
-    width: 8rem;
-    height: 2rem;
-    background: white;
-    cursor: pointer;
-    font-size: 12px;
-    color: black;
-    transition: background 150ms;
-}
-
-.control:hover {
+.controls a:hover{
     background: #f2f2f2;
+}
+
+.controls a:active{
+    background: #f2f2f2;
+}
+
+.controls .icon {
+    display: none;
 }
 
 .control[data-filter]:after {
@@ -257,4 +247,29 @@ p {
     }
 }
 
+/* Responsive NavBar */
+
+@media screen and (max-width: 961px) {
+  .controls a:not(:first-child) {display: none;}
+  .controls a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .controls.responsive {position: relative;}
+  .controls.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 8px;
+  }
+  .controls.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
 
