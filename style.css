@@ -90,7 +90,6 @@ p {
     display: inline-block;
     width: 8rem;
     height: 2rem;
-    cursor: pointer;
     font-size: 14px;
     color: black;
     transition: background 150ms;
@@ -107,6 +106,36 @@ p {
 
 .controls .icon {
     display: none;
+}
+
+/* Responsive NavBar */
+
+@media screen and (max-width: 961px) {
+  .controls a:not(:first-child) {display: none;}
+  .controls a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .controls.responsive {
+    position: relative;
+
+}
+  .controls.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 8px;
+    margin: 16px;
+  }
+  .controls.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .control[data-filter]:after {
@@ -246,30 +275,3 @@ p {
         width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
     }
 }
-
-/* Responsive NavBar */
-
-@media screen and (max-width: 961px) {
-  .controls a:not(:first-child) {display: none;}
-  .controls a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 961px) {
-  .controls.responsive {position: relative;}
-  .controls.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: center;
-    padding-top: 8px;
-  }
-  .controls.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-}
-
