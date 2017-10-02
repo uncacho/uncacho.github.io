@@ -79,11 +79,10 @@ p {
     padding: 1rem;
     background: white;
     opacity: 0.6;
-    font-size: 18px;
 }
 
 .controls a{
-    font-family: Montserrat, sans-serif;
+    font-family: sans-serif;
     cursor: pointer;
     text-align: center;
     padding-top: 8px;
@@ -91,7 +90,7 @@ p {
     display: inline-block;
     width: 8rem;
     height: 2rem;
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     transition: background 150ms;
     background: white;
