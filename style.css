@@ -24,7 +24,15 @@ a
 }
 
 p {
-    font-family: sans-serif;
+    font-family:sans-serif;
+}
+
+.content {
+    font-family: "Rounded Mplus 1c", sans-serif;
+    margin: 0, 20%, 0, 20%;
+    padding: 0, 20%, 0, 20%;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .nombre {
@@ -37,7 +45,7 @@ p {
 
 .thumbnail {
     padding: 0 0 0 0;
-    font-size: 14px;
+    font-size: 20em;
     width: 100%;
     position: center;
     margin: auto;
@@ -58,8 +66,8 @@ p {
     padding: 0 0 10px 0;
     color: black;
     text-align: left;
-    font-family: Montserrat, sans-serif !important;
-    font-size: 20px;
+    font-family: Montserrat, "Rounded Mplus 1c", sans-serif !important;
+    font-size: 36px;
     letter-spacing: 2px;
 }
 
@@ -67,6 +75,20 @@ p {
     width: 100% !important;
     padding: 0 5% 0 5%;
 
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /* Controls
