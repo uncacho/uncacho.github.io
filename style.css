@@ -105,32 +105,29 @@ SLIDER
 **************************
 */
 
-.wrapper { 
-        background:#EFEFEF; 
-        margin: auto; 
-        text-align: center; 
-        position: relative;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        margin-bottom: 20px !important;
-        width: 100%;
-        padding-top: 20px;
-    }
-    .scrolls { 
-        overflow-x: scroll;
-        overflow-y: hidden;
-        height: 100vh;
-        white-space:nowrap
-    } 
-    .imageDiv img { 
-        margin: 20px;
-        max-height: 50px;
-        cursor: pointer;
-        display:inline-block;
-        *display:inline;
-        *zoom:1;
-        vertical-align:top;
-    }
+.wrapper {
+  background: #EFEFEF;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px !important;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.scrolls {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 100%;
+  white-space: nowrap
+}
+
+.scrolls img {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
 
 .scrollcontainer {
     position: relative;
