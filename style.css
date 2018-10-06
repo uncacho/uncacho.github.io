@@ -119,7 +119,7 @@ SLIDER
     .scrolls { 
         overflow-x: scroll;
         overflow-y: hidden;
-        height: 1000px;
+        height: 100vh;
         white-space:nowrap
     } 
     .imageDiv img { 
