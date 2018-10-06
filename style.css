@@ -61,6 +61,23 @@ p {
     color: black;
 }
 
+/* 1 Columns */
+
+@media screen and (min-width: 1px) {
+    .thumbnailv {
+        width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
+    }
+}
+
+/* 2 Columns */
+
+@media screen and (min-width: 961px) {
+    .thumbnailv {
+        width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    }
+}
+
+
 .about {
     font-size: 14px;
     width: 90%;
@@ -103,7 +120,7 @@ p {
 **************************
 SLIDER
 **************************
-*/
+
 
 .wrapper {
   background: #EFEFEF;
@@ -134,6 +151,7 @@ SLIDER
 .scrollcontainer {
     position: relative;
 }
+*/
 
 /* Bottom right text */
 .text-block {
