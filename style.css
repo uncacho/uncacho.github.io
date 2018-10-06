@@ -35,6 +35,14 @@ p {
     line-height: 24px;
 }
 
+.content2 {
+    font-family: "Rounded Mplus 1c", sans-serif;
+    margin: 0, 20%, 0, 20%;
+    padding: 0, 20%, 0, 20%;
+    font-size: .8rem;
+    line-height: 24px;
+}
+
 .nombre {
     padding: 0 0 5px 10px;
     color: black;
@@ -89,6 +97,52 @@ p {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+/*
+**************************
+SLIDER
+**************************
+*/
+
+.wrapper { 
+        background:#EFEFEF; 
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        margin-bottom: 20px !important;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .scrolls { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 1000px;
+        white-space:nowrap
+    } 
+    .imageDiv img { 
+        margin: 20px;
+        max-height: 50px;
+        cursor: pointer;
+        display:inline-block;
+        *display:inline;
+        *zoom:1;
+        vertical-align:top;
+    }
+
+.scrollcontainer {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+
+
 }
 
 /* Controls
