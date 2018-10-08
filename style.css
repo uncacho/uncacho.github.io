@@ -1,370 +1,74 @@
 html,
-body {
-    font-size:62.5%;
-    height: 100%;
-    background: #f2f2f2;
-    margin: 10px 0 30px 0;
-}
-
-h3, h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
-    font-size: 2rem;
-    color: #111;
-}
-
-a
-  {
-    color: black;
-  }
-
+body{font-size:62.5%;height:100%;background:#f2f2f2;margin:10px 0 30px 0;}
+h3, h4{margin:10px 0 30px 0;letter-spacing:10px;font-size:2rem;color:#111;}
+a{color:black;}
 *,
 *:before,
-*:after {
-    box-sizing: border-box;
+*:after{box-sizing:border-box;}
+p{font-family:sans-serif;}
+.controls{position:fixed;width:100%;z-index:100;padding:1rem;background:white;opacity:0.6;}
+.controls a{font-family:sans-serif;cursor:pointer;text-align:center;padding-top:.8rem;position:relative;display:inline-block;width:9rem;height:3rem;font-size:12px;color:black;transition:background 150ms;background:white;}
+.controls a:hover{background:#f2f2f2;}
+.controls a:active{background:#f2f2f2;}
+.controls .icon{display:none;}
+.controls .home{font-size:1.6rem;font-family:Montserrat;width:20rem;}
+.controls .sns{width:5rem;font-size:0.9rem;color:#919191;}
+.control[data-filter]:after{position:absolute;width:10px;height:10px;top:calc(50% - 6px);left:calc(50% - 6px);border-radius:2px;transition:background-color 150ms, border-color 150ms;}
+.mixitup-control-active{background:#f1f1f1;}
+.mixitup-control-active[data-filter]:after{background:transparent;}
+.control:first-of-type{border-radius:3px 0 0 3px;}
+.control:last-of-type{border-radius:0 3px 3px 0;}
+@media screen and (max-width:1000px){.controls a:not(:first-child){display:none;}
+.controls a.icon{float:right;display:block;}
+.controls{width:100%;z-index:100;padding:1.2rem;background:white;opacity:0.6;}
+.controls.responsive{position:relative;padding-left:4.5rem;}
+.controls.responsive a.icon{position:absolute;height:3rem;right:0;top:0;text-align:center;margin-top:1.2rem;margin-right:1.2rem;}
+.controls.responsive a{height:3rem;float:none;display:block;text-align:left;}
+.controls.responsive a:not{display:block;height:3rem;float:none;display:block;text-align:left;}
 }
-
-p {
-    font-family:sans-serif;
-}
-
-/* NAVIGATION BAR
----------------------------------------------------------------------- */
-
-.controls {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    padding: 1rem;
-    background: white;
-    opacity: 0.6;
-}
-
-/* Menu */
-.controls a{
-    font-family: sans-serif;
-    cursor: pointer;
-    text-align: center;
-    padding-top: .8rem;
-    position: relative;
-    display: inline-block;
-    width: 9rem;
-    height: 3rem;
-    font-size: 12px;
-    color: black;
-    transition: background 150ms;
-    background: white;
-}
-
-.controls a:hover{
-    background: #f2f2f2;
-}
-
-.controls a:active{
-    background: #f2f2f2;
-}
-
-.controls .icon {
-    display: none;
-}
-/* Andres Cacho */
-.controls .home{
-  font-size:1.6rem;
-  font-family:Montserrat; 
-  width:20rem;
-}
-
-.controls .sns {
-  width:5rem;
-  font-size:0.9rem;
-  color:#919191;
-}
-
-.control[data-filter]:after {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: calc(50% - 6px);
-    left: calc(50% - 6px);
-    border-radius: 2px;
-    transition: background-color 150ms, border-color 150ms;
-}
-
-.mixitup-control-active {
-    background: #f1f1f1;
-}
-
-.mixitup-control-active[data-filter]:after {
-    background: transparent;
-}
-
-.control:first-of-type {
-    border-radius: 3px 0 0 3px;
-}
-
-.control:last-of-type {
-    border-radius: 0 3px 3px 0;
-}
-
-/* RESPONSIVE NAVBAR */
-
-@media screen and (max-width: 1000px) {
-
-  .controls a:not(:first-child) {display: none;}
-  .controls a.icon {
-    float: right;
-    display: block;
-  }
-
-  .controls {
-    width: 100%;
-    z-index: 100;
-    padding: 1.2rem;
-    background: white;
-    opacity: 0.6;
-  }
-  .controls.responsive {
-    position: relative;
-    padding-left: 4.5rem;
-}
-  .controls.responsive a.icon {
-    position: absolute;
-    height: 3rem;
-    right: 0;
-    top: 0;
-    text-align: center;
-    margin-top: 1.2rem;
-    margin-right: 1.2rem;
-  }
-  .controls.responsive a {
-    height: 3rem;
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .controls.responsive a:not {
-    display:block;
-    height: 3rem;
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* CONTENT
----------------------------------------------------------------------- */
-
-.content {
-    font-family: "Rounded Mplus 1c", sans-serif;
-    margin: 0, 20%, 0, 20%;
-    padding: 0, 20%, 0, 20%;
-    font-size: 1.4rem;
-    line-height: 24px;
-}
-
-.contentawards {
-    font-family: "Rounded Mplus 1c", sans-serif;
-    margin: 0, 20%, 0, 20%;
-    padding: 0, 20%, 0, 20%;
-    font-size: 1rem;
-    line-height: 2.4rem;
-}
-
-.about {
-    font-size: 1.4rem;
-    padding: 0 0 0 0;
-    position: absolute;
-    width: 90%;
-    line-height: 1.8rem;
-    color: black;
-    vertical-align: center;
-}
-
-.about .nombre {
-  padding-top: 4rem;
-  font-family: Montserrat, "Rounded Mplus 1c", sans-serif;
-  font-weight: bold;
-}
-
-/* each project title */
-.title {
-    padding: 0 0 1rem 0;
-    color: black;
-    text-align: left;
-    font-family: Montserrat, "Rounded Mplus 1c", sans-serif !important;
-    font-weight: bold;
-    font-size: 3.6rem;
-    line-height: 3.6rem;
-    letter-spacing: 2px;
-}
-
-/* portfolio title */
-.nombre {
-    font-size:1.3rem;
-    padding: 0 0 .5rem 0;
-    color: black;
-    text-align: left;
-    font-family: Montserrat, sans-serif !important;
-    letter-spacing: 0.2rem;
-}
-
-.thumbnail {
-    padding: 0 0 0 0;
-    font-size: 20em;
-    width: 100%;
-    position: center;
-    margin: auto;
-    line-height: 18px;
-    color: black;
-}
-
-.contentimage {
-    width: 100%;
-    position: center;
-}
-
-.individual {
-    width: 100% !important;
-    padding: 0 5% 0 5%;
-
-}
-
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-/* Bottom right text */
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-
-
-}
-
-
-/* Container
----------------------------------------------------------------------- */
-
-.container {
-    padding-top: 5rem;
-    text-align: justify;
-    font-size: 1.4rem;
-
-}
-
-.container:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-
-/* Target Elements Color Borde Superior
----------------------------------------------------------------------- */
-
+.content{font-family:"Rounded Mplus 1c", sans-serif;margin:0, 20%, 0, 20%;padding:0, 20%, 0, 20%;font-size:1.4rem;line-height:24px;}
+.contentawards{font-family:"Rounded Mplus 1c", sans-serif;margin:0, 20%, 0, 20%;padding:0, 20%, 0, 20%;font-size:1rem;line-height:2.4rem;}
+.about{font-size:1.4rem;padding:0 0 0 0;position:absolute;width:90%;line-height:1.8rem;color:black;vertical-align:center;}
+.about .nombre{padding-top:4rem;font-family:Montserrat, "Rounded Mplus 1c", sans-serif;font-weight:bold;}
+.title{padding:0 0 1rem 0;color:black;text-align:left;font-family:Montserrat, "Rounded Mplus 1c", sans-serif !important;font-weight:bold;font-size:3.6rem;line-height:3.6rem;letter-spacing:2px;}
+.nombre{font-size:1.3rem;padding:0 0 .5rem 0;color:black;text-align:left;font-family:Montserrat, sans-serif !important;letter-spacing:0.2rem;}
+.thumbnail{padding:0 0 0 0;font-size:20em;width:100%;position:center;margin:auto;line-height:18px;color:black;}
+.contentimage{width:100%;position:center;}
+.individual{width:100% !important;padding:0 5% 0 5%;}
+.video-responsive{overflow:hidden;padding-bottom:56.25%;position:relative;height:0;}
+.video-responsive iframe{left:0;top:0;height:100%;width:100%;position:absolute;}
+.text-block{position:absolute;bottom:20px;text-align:center;}
+.container{padding-top:5rem;text-align:justify;font-size:1.4rem;}
+.container:after{content:'';display:inline-block;width:100%;}
 .mix,
-.gap {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.mix {
-    background: transparent;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.mix:before {
-    content: '';
-    display: inline-block;
-}
-
-/* MEDIA RESPONSIVE
----------------------------------------------------------------------- */
-
+.gap{display:inline-block;vertical-align:top;}
+.mix{background:transparent;border-radius:2rem;margin-bottom:1rem;position:relative;}
+.mix:before{content:'';display:inline-block;}
 .mix,
-.gap {
-    width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
+.gap{width:calc(100%/1 - (((1 - 1) * 1rem)/1));}
+@media (min-width:1824px){.mix,
+.gap{width:calc(100%/4 - (((4 - 1) * 1rem)/4));}
+.contentimagevertical{width:calc(100%/2 - (((2 - 1) * 1rem)/2));}
+.about .content{font-size:1.4rem;width:70%;}
 }
-
-/* 4 Columns
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1824px) {
-  .mix,
-    .gap {width: calc(100%/4 - (((4 - 1) * 1rem) / 4));}
-  .contentimagevertical {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
-  .about .content {font-size: 1.4rem; width: 70%;}
+@media (min-width:1025px) and (max-width:1823px){.mix,
+.gap{width:calc(100%/3 - (((3 - 1) * 1rem)/3));}
+.contentimagevertical{width:calc(100%/2 - (((2 - 1) * 1rem)/2));}
+.about .content{font-size:1.4rem;width:70%;}
 }
-
-/* 3 Columns
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1823px) {
-  .mix,
-    .gap {width: calc(100%/3 - (((3 - 1) * 1rem) / 3));}
-  .contentimagevertical {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
-  .about .content {font-size: 1.4rem; width: 70%;}
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape){.mix,
+.gap{width:calc(100%/3 - (((3 - 1) * 1rem)/3));}
+.contentimagevertical{width:calc(100%/2 - (((2 - 1) * 1rem)/2));}
 }
-
-/* 3 Columns
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .mix,
-    .gap {width: calc(100%/3 - (((3 - 1) * 1rem) / 3));}
-  .contentimagevertical {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
+@media (min-width:768px) and (max-width:1024px){.mix,
+.gap{width:calc(100%/2 - (((2 - 1) * 1rem)/2));}
+.contentimagevertical{width:calc(100%/1 - (((1 - 1) * 1rem)/1));}
 }
-
-
-/* 2 Columns
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .mix,
-    .gap {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
-  .contentimagevertical {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
+@media (min-width:481px) and (max-width:767px){.mix,
+.gap{width:calc(100%/2 - (((2 - 1) * 1rem)/2));}
+.contentimagevertical{width:calc(100%/1 - (((1 - 1) * 1rem)/1));}
 }
-
-
-/* 2 Columns
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .mix,
-    .gap {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
-  .contentimagevertical {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
+@media (min-width:1px) and (max-width:480px){.mix,
+.gap{width:calc(100%/1 - (((1 - 1) * 1rem)/1));}
+.contentimagevertical{width:calc(100%/1 - (((1 - 1) * 1rem)/1));}
 }
-
-/* 1 Columns
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 1px) and (max-width: 480px) {
-  .mix,
-    .gap {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
-  .contentimagevertical {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
-}
-
