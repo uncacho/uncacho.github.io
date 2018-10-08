@@ -1,5 +1,6 @@
 html,
 body {
+    font-size:62.5%;
     height: 100%;
     background: #f2f2f2;
     margin: 10px 0 30px 0;
@@ -8,7 +9,7 @@ body {
 h3, h4 {
     margin: 10px 0 30px 0;
     letter-spacing: 10px;      
-    font-size: 20px;
+    font-size: 2rem;
     color: #111;
 }
 
@@ -27,142 +28,7 @@ p {
     font-family:sans-serif;
 }
 
-.content {
-    font-family: "Rounded Mplus 1c", sans-serif;
-    margin: 0, 20%, 0, 20%;
-    padding: 0, 20%, 0, 20%;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.content2 {
-    font-family: "Rounded Mplus 1c", sans-serif;
-    margin: 0, 20%, 0, 20%;
-    padding: 0, 20%, 0, 20%;
-    font-size: .8rem;
-    line-height: 24px;
-}
-
-.nombre {
-    padding: 0 0 5px 10px;
-    color: black;
-    text-align: left;
-    font-family: Montserrat, sans-serif !important;
-    letter-spacing: 2px;
-}
-
-.thumbnail {
-    padding: 0 0 0 0;
-    font-size: 20em;
-    width: 100%;
-    position: center;
-    margin: auto;
-    line-height: 18px;
-    color: black;
-}
-
-/* 1 Columns */
-
-@media screen and (min-width: 1px) {
-    .thumbnailv {
-        width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
-    }
-}
-
-/* 2 Columns */
-
-@media screen and (min-width: 961px) {
-    .thumbnailv {
-        width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
-    }
-}
-
-
-.about {
-    font-size: 14px;
-    width: 90%;
-    position: center;
-    margin: 0 0 0 .5em;
-    line-height: 18px;
-    color: black;
-}
-
-.title {
-    padding: 0 0 10px 0;
-    color: black;
-    text-align: left;
-    font-family: Montserrat, "Rounded Mplus 1c", sans-serif !important;
-    font-size: 36px;
-    letter-spacing: 2px;
-}
-
-.individual {
-    width: 100% !important;
-    padding: 0 5% 0 5%;
-
-}
-
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-/*
-**************************
-SLIDER
-**************************
-
-
-.wrapper {
-  background: #EFEFEF;
-  margin: auto;
-  text-align: left;
-  position: relative;
-  border-radius: 5px;
-  margin-bottom: 20px !important;
-  height: 100vh;
-  width: 100%;
-  padding-top: 5px;
-}
-
-.scrolls {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  height: 100%;
-  white-space: nowrap
-}
-
-.scrolls img {
-  display: inline-block;
-  vertical-align: top;
-  height: 100vh;
-  position: relative;
-}
-
-.scrollcontainer {
-    position: relative;
-}
-*/
-
-/* Bottom right text */
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-
-
-}
-
-/* Controls
+/* NAVIGATION BAR
 ---------------------------------------------------------------------- */
 
 .controls {
@@ -174,15 +40,16 @@ SLIDER
     opacity: 0.6;
 }
 
+/* Menu */
 .controls a{
     font-family: sans-serif;
     cursor: pointer;
     text-align: center;
-    padding-top: 8px;
+    padding-top: .8rem;
     position: relative;
     display: inline-block;
-    width: 6rem;
-    height: 2rem;
+    width: 9rem;
+    height: 3rem;
     font-size: 12px;
     color: black;
     transition: background 150ms;
@@ -200,42 +67,17 @@ SLIDER
 .controls .icon {
     display: none;
 }
-
-/* Responsive NavBar */
-
-@media screen and (max-width: 900px) {
-  .controls a:not(:first-child) {display: none;}
-  .controls a.icon {
-    float: right;
-    display: block;
-  }
+/* Andres Cacho */
+.controls .home{
+  font-size:1.6rem;
+  font-family:Montserrat; 
+  width:20rem;
 }
 
-@media screen and (max-width: 900px) {
-  .controls {
-    width: 100%;
-    z-index: 100;
-    padding: 1rem;
-    background: white;
-    opacity: 0.6;
-  }
-  .controls.responsive {
-    position: relative;
-    padding-left: 22px;
-}
-  .controls.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: center;
-    margin-top: 16px;
-    margin-right: 16px;
-  }
-  .controls.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.controls .sns {
+  width:5rem;
+  font-size:0.9rem;
+  color:#919191;
 }
 
 .control[data-filter]:after {
@@ -264,33 +106,160 @@ SLIDER
     border-radius: 0 3px 3px 0;
 }
 
-        /*Color botton inactivo
+/* RESPONSIVE NAVBAR */
 
-.control[data-filter=".design"] {
-    color: #91e6c7;
+@media screen and (max-width: 1000px) {
+
+  .controls a:not(:first-child) {display: none;}
+  .controls a.icon {
+    float: right;
+    display: block;
+  }
+
+  .controls {
+    width: 100%;
+    z-index: 100;
+    padding: 1.2rem;
+    background: white;
+    opacity: 0.6;
+  }
+  .controls.responsive {
+    position: relative;
+    padding-left: 4.5rem;
+}
+  .controls.responsive a.icon {
+    position: absolute;
+    height: 3rem;
+    right: 0;
+    top: 0;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .controls.responsive a {
+    height: 3rem;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .controls.responsive a:not {
+    display:block;
+    height: 3rem;
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
-.control[data-filter=".craft"] {
-    color: #5ecdde;
+/* CONTENT
+---------------------------------------------------------------------- */
+
+.content {
+    font-family: "Rounded Mplus 1c", sans-serif;
+    margin: 0, 20%, 0, 20%;
+    padding: 0, 20%, 0, 20%;
+    font-size: 1.4rem;
+    line-height: 24px;
 }
 
-.control[data-filter=".art"] {
-    color: #d595aa;
+.contentawards {
+    font-family: "Rounded Mplus 1c", sans-serif;
+    margin: 0, 20%, 0, 20%;
+    padding: 0, 20%, 0, 20%;
+    font-size: 1rem;
+    line-height: 2.4rem;
 }
 
-.control[data-filter="none"] {
-    color: #2f2f2f;
+.about {
+    font-size: 1.4rem;
+    padding: 0 0 0 0;
+    position: absolute;
+    width: 90%;
+    line-height: 1.8rem;
+    color: black;
+    vertical-align: center;
 }
 
-*/
+.about .nombre {
+  padding-top: 4rem;
+  font-family: Montserrat, "Rounded Mplus 1c", sans-serif;
+  font-weight: bold;
+}
+
+/* each project title */
+.title {
+    padding: 0 0 1rem 0;
+    color: black;
+    text-align: left;
+    font-family: Montserrat, "Rounded Mplus 1c", sans-serif !important;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    letter-spacing: 2px;
+}
+
+/* portfolio title */
+.nombre {
+    font-size:1.3rem;
+    padding: 0 0 .5rem 0;
+    color: black;
+    text-align: left;
+    font-family: Montserrat, sans-serif !important;
+    letter-spacing: 0.2rem;
+}
+
+.thumbnail {
+    padding: 0 0 0 0;
+    font-size: 20em;
+    width: 100%;
+    position: center;
+    margin: auto;
+    line-height: 18px;
+    color: black;
+}
+
+.contentimage {
+    width: 100%;
+    position: center;
+}
+
+.individual {
+    width: 100% !important;
+    padding: 0 5% 0 5%;
+
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+
+
+}
+
 
 /* Container
 ---------------------------------------------------------------------- */
 
 .container {
-    padding-top: 6em;
+    padding-top: 5rem;
     text-align: justify;
-    font-size: 14px;
+    font-size: 1.4rem;
 
 }
 
@@ -311,8 +280,7 @@ SLIDER
 
 .mix {
     background: transparent;
-    /* border-top: .5rem solid currentColor; */
-    border-radius: 2px;
+    border-radius: 2rem;
     margin-bottom: 1rem;
     position: relative;
 }
@@ -320,26 +288,9 @@ SLIDER
 .mix:before {
     content: '';
     display: inline-block;
-    /* padding-top: 56.25%; */
 }
 
-.mix.design {
-    color: #D8E2E7;
-}
-
-.mix.art {
-    color: #E5DCE1;
-}
-
-.mix.craft {
-    color: #E7E6DD;
-}
-
-.mix.about {
-    color: #f1f1f1;
-}
-
-/* Grid Breakpoints
+/* MEDIA RESPONSIVE
 ---------------------------------------------------------------------- */
 
 .mix,
@@ -353,10 +304,10 @@ SLIDER
 */
 
 @media (min-width: 1824px) {
-  
-    .mix,
+  .mix,
     .gap {width: calc(100%/4 - (((4 - 1) * 1rem) / 4));}
-  
+  .contentimagevertical {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
+  .about {font-size: 1.4rem; width: 70%;}
 }
 
 /* 3 Columns
@@ -365,10 +316,10 @@ SLIDER
 */
 
 @media (min-width: 1025px) and (max-width: 1823px) {
-  
   .mix,
     .gap {width: calc(100%/3 - (((3 - 1) * 1rem) / 3));}
-  
+  .contentimagevertical {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
+  .about {font-size: 1.4rem; width: 70%;}
 }
 
 /* 3 Columns
@@ -377,11 +328,11 @@ SLIDER
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
   .mix,
     .gap {width: calc(100%/3 - (((3 - 1) * 1rem) / 3));}
-  
+  .contentimagevertical {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
 }
+
 
 /* 2 Columns
   ##Device = Tablets, Ipads (portrait)
@@ -389,10 +340,9 @@ SLIDER
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
   .mix,
     .gap {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
-  
+  .contentimagevertical {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
 }
 
 
@@ -402,10 +352,9 @@ SLIDER
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
   .mix,
     .gap {width: calc(100%/2 - (((2 - 1) * 1rem) / 2));}
-  
+  .contentimagevertical {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
 }
 
 /* 1 Columns
@@ -413,10 +362,9 @@ SLIDER
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
+@media (min-width: 1px) and (max-width: 480px) {
   .mix,
     .gap {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
-  
+  .contentimagevertical {width: calc(100%/1 - (((1 - 1) * 1rem) / 1));}
 }
 

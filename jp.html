@@ -4,8 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" type="text/css"/>
         <link href="./reset.css" rel="stylesheet"/>
         <link href="./style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -13,11 +13,11 @@
 
         <title>Andres Cacho</title>
     </head>
-    <body>
+    <body>  
 
         <div class="controls" id="myControls">
             <ul>
-                <a data-filter=".portfolio" style="font-size:14px; font-family:Montserrat; width:10rem;">ANDRES CACHO</a>
+                <a data-filter=".portfolio" class="home">ANDRES CACHO</a>
                 <a data-filter=".about">について</a>
                 <a data-filter=".portfolio">ポートフォリオ</a>
                 <a data-filter=".design">デザイン</a>
@@ -25,8 +25,8 @@
                 <a data-filter=".art">アート</a>
                 <a target="_blank" href="https://www.instagram.com/uncacho/"><i class="fa fa-instagram fa-fw "></a></i>
                 <a target="_top" href="mailto:cacho@andrescacho.com?Subject=こんにちは"><i class="fa fa-envelope fa-fw "></a></i>
-                <a style="width:2rem; font-size:9px; color:#919191;" href="./en.html#portfolio">En</a>
-                <a style="width:2rem; font-size:9px; color:#919191;" href="./es.html#portfolio">Es</a>
+                <a class="sns" href="./en.html#portfolio">En</a>
+                <a class="sns" href="./es.html#portfolio">Es</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </ul>
         </div>
@@ -35,99 +35,104 @@
             <div class="mix portfolio art craft">
                 <button type="button" data-filter=".molinillos">
                     <img class="thumbnail" src="./img/andrescacho+portfolio+molinillo+t.jpg" alt="molinillos" width="100%">
-                <div class="nombre">モリニジョス<br>2018 WIP</div>
+                <div class="nombre">モリニジョス</div>
             </div>
             <div class="mix portfolio craft design">
                 <button type="button" data-filter=".kumitate">
                     <img class="thumbnail" src="./img/andrescacho+portfolio+kumitate+t.jpg" alt="kumitate" width="100%">
-                <div class="nombre">クミタテ・スツール<br>2018</div>
+                <div class="nombre">クミタテ・スツール</div>
             </div>
             <div class="mix portfolio art craft">
                 <button type="button" data-filter=".agathisdeconstruction">
                     <img class="thumbnail" src="./img/andrescacho+portfolio+agathisdeconstruction+t.jpg" alt="agathis deconstruccion" width="100%">
-                <div class="nombre">アガチス解体<br>2017</div>
+                <div class="nombre">アガチス解体</div>
             </div>
             <div class="mix portfolio design craft">
                 <button type="button" data-filter=".hayashichair">
                     <img class="thumbnail" src="./img/andrescacho+portfolio+hayashichair+t.jpg" alt="hayashi" width="100%">
-                <div class="nombre">林椅子<br>2018</div>
+                <div class="nombre">林椅子</div>
             </div>
             <div class="mix portfolio art craft">
                 <button type="button" data-filter=".makeandmend
                 "><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend+t.jpg" alt="maco" width="100%">
-                <div class="nombre">MAKE (BREAK) & MEND<br>2017</div>
+                <div class="nombre">MAKE (BREAK) & MEND</div>
             </div>
             <div class="mix portfolio craft">
                 <button type="button" data-filter=".washistool"><img class="thumbnail" src="./img/andrescacho+portfolio+washi+t.jpg" alt="washi stool" width="100%">
-                <div class="nombre">和紙スツール<br>2017</div>
+                <div class="nombre">和紙スツール</div>
             </div>
             <div class="mix portfolio design craft">
                 <button type="button" data-filter=".hayashi"><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi+t.jpg" alt="torii" width="100%">
-                <div class="nombre">林テーブル<br>2017</div>
+                <div class="nombre">林テーブル</div>
             </div>
             <div class="mix portfolio craft art">
                 <button type="button" data-filter=".colors"><img class="thumbnail" src="./img/andrescacho+portfolio+colors+t.jpg" alt="colors" width="100%">
-                <div class="nombre">色々な色<br>2017</div>
+                <div class="nombre">色々な色</div>
             </div>
             <div class="mix portfolio craft">
                 <button type="button" data-filter=".gradient"><img class="thumbnail" src="./img/andrescacho+portfolio+gradient+t.jpg" alt="gradient" width="100%">
-                <div class="nombre">グラディエント<br>2016</div>
+                <div class="nombre">グラディエント</div>
             </div>
             <div class="mix portfolio craft design art">
                 <button type="button" data-filter=".compass"><img class="thumbnail" src="./img/andrescacho+portfolio+compass+t.jpg" alt="compass" width="100%">
-                <div class="nombre">コンパス<br>2016</div>
+                <div class="nombre">コンパス</div>
             </div>
             <div class="mix portfolio design">
                 <button type="button" data-filter=".pirwi"><img class="thumbnail" src="./img/andrescacho+portfolio+pirwi+t.jpg" alt="pirwi" width="100%">
-                <div class="nombre">ピルウィ<br>2016</div>
+                <div class="nombre">ピルウィ</div>
             </div>
             <div class="mix portfolio art design">
                 <button type="button" data-filter=".tamayo"><img class="thumbnail" src="./img/andrescacho+portfolio+tamayo+t.jpg" alt="tamayo" width="100%">
-                <div class="nombre">タマジョ<br>2015</div>
+                <div class="nombre">タマジョ</div>
             </div>
             <div class="mix portfolio design">
                 <button type="button" data-filter=".maco"><img class="thumbnail" src="./img/andrescacho+portfolio+maco+t.jpg" alt="maco" width="100%">
-                <div class="nombre">マコ<br>2014</div>
+                <div class="nombre">マコ</div>
             </div>
             <div class="mix portfolio design">
                 <button type="button" data-filter=".loma"><img class="thumbnail" src="./img/andrescacho+portfolio+loma+t.jpg" alt="loma" width="100%">
-                <div class="nombre">ローマ<br>2013</div>
+                <div class="nombre">ローマ</div>
             </div>
             <div class="mix portfolio design">
                 <button type="button" data-filter=".mictlan"><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan+t.jpg" alt="mictlan" width="100%">
-                <div class="nombre">ミクツラン<br>2012</div>
+                <div class="nombre">ミクツラン</div>
             </div>
             <!-- <div class="mix portfolio design">
                 <button type="button" data-filter=".uma"><img class="thumbnail" src="./img/andrescacho+portfolio+uma+t.jpg" alt="uma" width="100%">
-                <div class="nombre">UMA<br>2010</div>
+                <div class="nombre">UMA</div>
             </div> -->
-            
-<!--  - - - - - - - - - - - - BIO - - - - - - - - - - - -  -->
-            
-            <div class="mix about">
-                <div class="nombre" style="text-align:right; padding-right:30px;">BIO</div>
-                <div class="about"><p>1989年メキシコシティ生まれ。デザイナーとしてキャリアを積んだ経験をもとに、物の構造についての研究、考察、探求を行う。工芸と芸術の境界線に興味を持ち、「平凡さ」の認識について考察するため、日常生活における行動についてリサーチしている。</p>
 
-                <br><p>フランツ・マイヤー美術館、サン・イルデフォンソ学院などメキシコ国内で多数作品を発表。また、スペインで行われた第二回イベロアメリカン・デザイン・ビエンナーレに参加。現在、東京藝術大学大学院美術研究科グローバルアートプラクティス専攻に在学中。<br><br></p></div>
-            </div>
-
-<!--  - - - - - - - - - - - - STATEMENT - - - - - - - - - - - -  -->
-
-            <div class="mix about">
-                <div class="nombre" style="text-align:right; padding-right:30px;">STATEMENT</div>
-                <div class="about"><p>The daily repetition of an action may have two possible outcomes. One outcome may be a forgotten moment from our everyday lives the second is a way to achieve comprehensive mastery of our own lives. I tend to pursue the latter. I think of art as a medium to highlight and create awareness of the forgotten importance of mundane daily actions.</p>
-
-                <br><p>My practice questions the understanding of craft as a technique; as a mindlessly mechanical repetition. I am interested in the boundaries between craft and art; and with that, the intimate relationship between hand and thought. I consider the idea of craftsmanship as the elevation of a practice, and art, as the exteriorization of the thought.
-                <br><br></p></div>
-                
-            </div>
-
-<!--  - - - - - - - - - - - - CONTACT - - - - - - - - - - - -  -->
-            
-            <div class="mix about">
-                <div class="nombre" style="text-align:right; padding-right:30px;">CONTACT</div>
-                <div class="about"><div class="content"><p><a href="mailto:cacho@andrescacho.com?Subject=こんにちは" target="_top">cacho@andrescacho.com</a></p></div></div>
-            </div>
+<!--  - - - - - - - - - - - - ABOUT - - - - - - - - - - - -  -->
+<div class="mix about individual">
+    <div class="about">
+        <div class="nombre">バイオグラフィー</div>
+        <div class="content"><p>1989年メキシコシティ生まれ。デザイナーとしてキャリアを積んだ経験をもとに、物の構造についての研究、考察、探求を行う。工芸と芸術の境界線に興味を持ち、「平凡さ」の認識について考察するため、日常生活における行動についてリサーチしている。</p>
+        <br><p>フランツ・マイヤー美術館、サン・イルデフォンソ学院などメキシコ国内で多数作品を発表。また、スペインで行われた第二回イベロアメリカン・デザイン・ビエンナーレに参加。現在、東京藝術大学大学院美術研究科グローバルアートプラクティス専攻に在学中。</p></div>
+        <div class="nombre">STATEMENT</div>
+        <div class="content"><p>The daily repetition of an action may have two possible outcomes. One outcome may be a forgotten moment from our everyday lives the second is a way to achieve comprehensive mastery of our own lives. I tend to pursue the latter. I think of art as a medium to highlight and create awareness of the forgotten importance of mundane daily actions.</p>
+        <br><p>My practice questions the understanding of craft as a technique; as a mindlessly mechanical repetition. I am interested in the boundaries between craft and art; and with that, the intimate relationship between hand and thought. I consider the idea of craftsmanship as the elevation of a practice, and art, as the exteriorization of the thought.</p></div>
+        <div class="nombre">受賞・入選歴</div>
+        <div class="content"><p>
+        ２０１８　／　Creators 5 · Exhibition · Tokyo Artcomplex Center
+        <br>２０１８　／　Showcase · Solo Exhibition curated by Ozawa Tsuyoshi · TUA
+        <br>２０１７　／　Toride Art Path · Exhibition · Tokyo University of the Arts
+        <br>２０１７　／　Folkeston Art Triennale · Exhibition · England. TUA x CSM
+        <br>２０１６　／　Monbukagakusho · Scholar · Japan Ministry of Education
+        <br>２０１５　／　Zona Maco de Arte Contemporáneo · Designer · Pirwi Pavilion
+        <br>２０１４　／　Design Week Mexico · Designer · Pirwi Pavilion for Tamayo Museum
+        <br>２０１３　／　San Ildefonso Museum · Exhibition · Abierto Mexicano de Diseño
+        <br>２０１２　／　Iberoamerican Design Biennale · Honorable Mention México
+        <br>２０１２　／　Iberoamerican Design Biennale · Exhibition · Spain · Jabonera Design Estudio
+        <br>２０１２　／　Quorum · Award · Conceptual category
+        <br>２０１２　／　Quorum · Exhibition · Franz Mayer Museum
+        <br>２０１２　／　Dimuebe · Honorable Mention
+        <br>２０１１　／　Iminox · Honorable Mention
+        <br>２０１１　／　POPAI · Award · Red Solutions</p>
+        </div>
+        <div class="nombre">メール</div>
+        <div class="content"><p><a href="mailto:cacho@andrescacho.com?Subject=Hello" target="_top">cacho@andrescacho.com</a><br><br><br><br></p></div>
+    </div>
+</div>       
 
 <!--  - - - - - - - - - - - - UMA - - - - - - - - - - - -  -->
 
@@ -135,13 +140,13 @@
             <div class="about">
                 <div class="title">UMA</div>
                 <p>2010<br></p><br><p>Los sistemas de mantenimiento para los aeropuertos en México son importados y no satisfacen las necesidades del contexto en el que trabajan. Estas unidades están diseñadas para las especificaciones y requerimientos de los aeropuertos en México. Este enorme proyecto se desarrollo a lo largo de dos años. Tuve la oportunidad de participar durante mis practicas profesionales en La Jabonera. Estuvieron involucrados ASA -Aeropuertos y Servicios Auxiliares- y CIATEQ -Centro de Investigación y Tecnología Avanzada-. Fue requerido el diseño de una Unidad Principal y 3 remolques con una clara identidad visual.</p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+uma1.jpg" alt="uma" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+uma2.jpg" alt="uma" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+uma3.jpg" alt="uma" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+uma4.jpg" alt="uma" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+uma5.jpg" alt="uma" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+uma6.jpg" alt="uma" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+uma7.jpg" alt="uma" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+uma1.jpg" alt="uma" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+uma2.jpg" alt="uma" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+uma3.jpg" alt="uma" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+uma4.jpg" alt="uma" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+uma5.jpg" alt="uma" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+uma6.jpg" alt="uma" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+uma7.jpg" alt="uma" width="100%">
             </div>
         </div> -->
 
@@ -149,15 +154,15 @@
 
         <div class="mix mictlan individual">
             <div class="about">
-                <div class="title">MICTLAN<br><br>2012</div>
+                <div class="title">MICTLAN<br>2012</div>
                 <div class="content"><br>「あえて言うのだが、ニューヨーク、パリ、あるいはロンドンの市民にとって、死とは唇を焼いてしまうほどの禁句である。一方でメキシコ人は死を何度も口にし、からかい、愛し、ともに眠り、死を祝う。死は私たちのお気に入りの玩具の一つであり、私たちの最も深い愛なのである。すべての人類と同様に、私たちは死を非常に恐れるが、少なくとも死を隠すようなことはしないし、死から逃れようともしない。」オクタビオ・パス『孤独の迷宮』より。<br>死者の日は、色彩、香、音に満ちた伝統です。これらの刺激全てに着想を得て、死を生の一部として抱くためにMictlanはデザインされました。骨壺は、メキシコ中央に位置するグアナファト、Tarandacuao村の職人によって制作されました。</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan1.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan2.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan3.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan4.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan5.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan6.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+mictlan7.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+mictlan1.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+mictlan2.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+mictlan3.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+mictlan4.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+mictlan5.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+mictlan6.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+mictlan7.jpg" alt="mictlan" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
             </div>
         </div>
 
@@ -165,15 +170,15 @@
 
         <div class="mix loma individual">
             <div class="about">
-                <div class="title">LOMA<br><br>2013</div>
+                <div class="title">LOMA<br>2013</div>
                 <div class="content"><br>現代のライフスタイルでは、人々が自由な時間を持つことは限られています。Lomaは家の中で快適なピクニックを楽しむための背の低いテーブルです。マットはメキシコ、ソリアノ村のGranados氏により制作された１００％羊毛製で、机はポプラの木で作られ、仕上げに亜麻仁油が使われています。<br>デザインとメキシコの職人Cesario Collado氏の仕事の完璧なコンビネーションにより、金具を使わず、数分で机を組み立てることが可能になりました。</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+loma1.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+loma2.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+loma3.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+loma4.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+loma5.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+loma6.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+loma7.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+loma1.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+loma2.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+loma3.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+loma4.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+loma5.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+loma6.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+loma7.jpg" alt="loma" width="100%"><p style="text-align:right; font-size:0.8em"><a href="https://www.instagram.com/igorovmx/" target="_blank">IGOROVMX Photography</a></p>
             </div>
         </div>
 
@@ -181,15 +186,15 @@
 
         <div class="mix maco individual">
             <div class="about">
-                <div class="title">MACO<br><br>2014</div>
+                <div class="title">MACO<br>2014</div>
                 <div class="content"><br>ラテンアメリカで最も重要な現代アートの見本市「Zona　Maco」は毎年、世界各地のコレクターやギャラリーをメキシコシティに集めています。パビリオンには、Pirwiと協働の作品が展示されていて、８人のアーティストの作品が展示されています。<br>私はPirwiの新プロジェクト発展分野の責任者であったため、企画チームに所属し、エンジニアリングとパビリオン、そしてパビリオンの中のすべての家具のインスタレーションを担当しました。</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+maco1.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+maco2.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+maco3.jpg" alt="maco" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+maco4.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+maco5.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+maco6.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+maco7.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+maco1.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+maco2.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+maco3.jpg" alt="maco" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+maco4.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+maco5.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+maco6.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+maco7.jpg" alt="maco" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://diegoberruecos.com/" target="_blank">Diego Berruecos Photography</a>
             </div>
         </div>
 
@@ -197,14 +202,14 @@
 
         <div class="mix tamayo individual">
             <div class="about">
-                <div class="title">TAMAYO<br><br>2015</div>
+                <div class="title">TAMAYO<br>2015</div>
                 <<div class="content"><br>このパビリオンは「窓」に着想を得た、円形の構造になっています。小さな空間は、利用者が常に変わりゆく空間の一瞬を感じることを可能にしています。このプロジェクトは建築を自然と創造性の調和として捉えています。<br>私はPirwiの新プロジェクト発展分野の責任者であったため、企画チームに所属し、エンジニアリングとパビリオンのインスタレーションを担当しました。</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+tamayo1.jpg" alt="tamayo" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+tamayo2.jpg" alt="tamayo" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+tamayo3.jpg" alt="tamayo" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+tamayo4.jpg" alt="tamayo" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+tamayo5.jpg" alt="tamayo" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+tamayo6.jpg" alt="tamayo" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+tamayo1.jpg" alt="tamayo" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+tamayo2.jpg" alt="tamayo" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+tamayo3.jpg" alt="tamayo" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+tamayo4.jpg" alt="tamayo" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+tamayo5.jpg" alt="tamayo" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+tamayo6.jpg" alt="tamayo" width="100%">
             </div>
         </div>
 
@@ -212,14 +217,14 @@
 
         <div class="mix pirwi individual">
             <div class="about">
-                <div class="title">PIRWI<br><br>2015</div>
+                <div class="title">PIRWI<br>2015</div>
                 <div class="content"><br>"The goal is to make Pirwi a useful tool in social and environmental regeneration, which will help create a larger level of well being for the company and its workers, for those who use our products, and for the planet that allows us to manufacture them." <br> I worked from 2012 until 2016 as Sr. Designer in the New Product Development area at Pirwi. As the new products and special projects development project leader I worked in the cencept, development, prototyping and manufacture of projects ranging form a chair to wooden pavilions.</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+pirwi1.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">DLK modular shelf - Design by Derek Dellekamp</p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+pirwi2.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">DLK modular shelf - Design by Derek Dellekamp</p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+pirwi3.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">Petzel Lamp - Design by Jorge Pardo</p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+pirwi4.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">Development Process</p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+pirwi5.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">6AM Chair - Design by Emiliano Godoy</p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+pirwi6.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">Martina Table - Design by Ian Ortega</p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+pirwi1.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">DLK modular shelf - Design by Derek Dellekamp</p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+pirwi2.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">DLK modular shelf - Design by Derek Dellekamp</p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+pirwi3.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">Petzel Lamp - Design by Jorge Pardo</p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+pirwi4.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">Development Process</p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+pirwi5.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">6AM Chair - Design by Emiliano Godoy</p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+pirwi6.jpg" alt="pirwi" width="100%"><p style="text-align:right; font-size:0.8em">Martina Table - Design by Ian Ortega</p>
             </div>
         </div>
 
@@ -227,13 +232,13 @@
 
         <div class="mix compass individual">
             <div class="about">
-                <div class="title">コンパス<br><br>2016</div>
+                <div class="title">コンパス<br>2016</div>
                 <div class="content"><br>The wedge is one of the oldest and most applied principles in Japanese woodworking. As a basic exercise to comprehend and learn the joint I developed two beam compasses. <br>Two ideas, a line as the union between two points. And a line as one of the simplest forms of visual communication inspired these designs. Straight and simple lines define the form of both compasses.<br>In one, minimizing the impact of the pencil and the needle to the minimum. Therefore, leaving the all the protagonism to the form and the concept.<br>On the other hand, the second design gives to the pencil, or its absence, the main focus. As the pencil is the wedge itself and without it, the compass function can not be done.</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+compass1.jpg" alt="compass" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+compass4.jpg" alt="compass" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+compass5.jpg" alt="compass" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+compass6.jpg" alt="compass" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+compass7.jpg" alt="compass" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+compass1.jpg" alt="compass" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+compass4.jpg" alt="compass" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+compass5.jpg" alt="compass" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+compass6.jpg" alt="compass" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+compass7.jpg" alt="compass" width="100%">
             </div>
         </div>
 
@@ -241,14 +246,14 @@
 
         <div class="mix gradient individual">
             <div class="about">
-                <div class="title">グラディエント<br><br>2016</div>
+                <div class="title">グラディエント<br>2016</div>
                 <div class="content"><br>The thinning of the wood in the magewappa bento joint inspired this lamp. The idea is to create a gradient that is only visible when the light is on. This gradient seeks to unveil the beauty add warmth of wood. <br>The thinning of the lamp shade is achieved manually with the kanna (Japanese woodplane).<br>The bottom joint of the lamp shade is made with a small wooden insert and tighten up together with Japanese cherry bark.</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+gradient1.jpg" alt="gradient" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+gradient2.gif" alt="gradient" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+gradient3.jpg" alt="gradient" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+gradient4.jpg" alt="gradient" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+gradient5.jpg" alt="gradient" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+gradient6.jpg" alt="gradient" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+gradient1.jpg" alt="gradient" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+gradient2.gif" alt="gradient" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+gradient3.jpg" alt="gradient" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+gradient4.jpg" alt="gradient" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+gradient5.jpg" alt="gradient" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+gradient6.jpg" alt="gradient" width="100%">
             </div>
         </div>
 
@@ -256,12 +261,12 @@
 
         <div class="mix colors individual">
             <div class="about">
-                <div class="title">色々な色<br><br>2017</div>
+                <div class="title">色々な色<br>2017</div>
                 <div class="content"><br>「美しいもの」と聞いた時に、色々なものを考えましたが、本当に美しいものとは何でしょうか。<br>人それぞれ、心の中には大きい世界があります。美の答えは人それぞれだと思います。みんなは同じ人間ですが、ぜんぜん違います。<br>この多様性は私にとって美しいと思います。そして、今、世界はグロバルになって来たのでこの多様性も大事なことだと思います。<br>これを考えながらこの作品を生まれました。<br>外側を見る時にカップがにていますが内側を見たらカップが違います。これは人間と同じでカップの内側には色々な色があります。</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+colors1.jpg" alt="colors" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+colors2.jpg" alt="colors" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+colors4.jpg" alt="colors" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+colors5.jpg" alt="colors" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+colors1.jpg" alt="colors" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+colors2.jpg" alt="colors" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+colors4.jpg" alt="colors" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+colors5.jpg" alt="colors" width="100%">
             </div>
         </div>
 
@@ -269,29 +274,29 @@
 
         <div class="mix hayashi individual">
             <div class="about">
-                <div class="title">林テーブル<br><br>2017</div>
-                <div class="content"><br>Inspired by tradicional Japanese carpentry, this table can be totally disassembled thanks to the dovetails and wedges used for its construction.<br>It is finished with soap inspired by the Danish carpentry.</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi0.jpg" alt="hayashi" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi1.jpg" alt="hayashi" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi2.jpg" alt="hayashi" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi3.jpg" alt="hayashi" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi4.jpg" alt="hayashi" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi5.jpg" alt="hayashi" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashi6.jpg" alt="hayashi" width="100%">
+                <div class="title">林テーブル<br>2017</div>
+                <div class="content"><br>鳥居の柱を丸くする伝統的なやり方を触発されました。足は鉋で手作っています。アリ桟とくさびで組み立てるテーブルです。カラマツで作って石鹸と油で仕上げしています。</div>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashi0.jpg" alt="hayashi" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashi1.jpg" alt="hayashi" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashi2.jpg" alt="hayashi" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashi3.jpg" alt="hayashi" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashi4.jpg" alt="hayashi" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashi5.jpg" alt="hayashi" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashi6.jpg" alt="hayashi" width="100%">
             </div>
         </div>
 <!--  - - - - - - - - - - - - WASHI STOOL - - - - - - - - - - - -  -->
 
         <div class="mix washistool individual">
             <div class="about">
-                <div class="title">和紙スツール<br><br>2017</div>
-                <div class="content"><br>A simple stool with the seat wooven with Japanese paper. The adges are handcarved with a chisel and it has been finished with linseed oil.</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+washi1.jpg" alt="washi stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+washi2.jpg" alt="washi stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+washi3.jpg" alt="washi stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+washi4.jpg" alt="washi stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+washi5.jpg" alt="washi stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+washi6.jpg" alt="washi stool" width="100%">
+                <div class="title">和紙スツール<br>2017</div>
+                <div class="content"><br>シンプルなスツールです。座面は和紙で編んでいます。タモで作って油で仕上げしています。</div>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+washi1.jpg" alt="washi stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+washi2.jpg" alt="washi stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+washi3.jpg" alt="washi stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+washi4.jpg" alt="washi stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+washi5.jpg" alt="washi stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+washi6.jpg" alt="washi stool" width="100%">
             </div>
         </div>
 
@@ -299,15 +304,20 @@
 
         <div class="mix makeandmend individual">
             <div class="about">
-                <div class="title">MAKE (BREAK) & MEND<br><br>2017</div>
+                <div class="title">MAKE (BREAK) & MEND<br>2017</div>
                 <div class="content"><br>この作品は二つの要素により成り立つ。退役軍人が大工の技術を学ぶフォークストン・シェッド・プロジェクトと共同し、日本でよく見かける木の枝を支える柱をヒントに、サイト・スペシフィックで建築的な介入を施す。<br>一方で、パビリオンの建設で余った木材は、日本の道具を用いて手作業で美しい箸に加工され、訪れた観客にお土産として配られる。（フォークストン・シェッドは、シェプウェイ・ボランティア・センターの一部です）</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend1.jpg" alt="make and mend" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend2.jpg" alt="make and mend" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend3.jpg" alt="make and mend" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend4.jpg" alt="make and mend" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend5.jpg" alt="make and mend" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://www.bartlehalpinphotography.co.uk/" target="_blank">Bartle Halpin Photography</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend7.jpg" alt="make and mend" width="100%"><p style="text-align:right; font-size:0.8em">©Global Art Joint Curriculum 2017 between <a href="http://www.arts.ac.uk/csm/" target="_blank">Central Saint Martins, University of the Arts London</a> and <a href="http://www.geidai.ac.jp/english/" target="_blank">Tokyo University of the Arts</a></p>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+makeandmend6.jpg" alt="make and mend" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://www.bartlehalpinphotography.co.uk/" target="_blank">Bartle Halpin Photography</a></p>
+                <br>
+                <div class="video-responsive">
+                    <iframe src="https://player.vimeo.com/video/246058873?loop=1&title=0&byline=0&portrait=0" width="1460" height="822" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <p><a href="https://vimeo.com/246058873">Mend (Break) &amp; Mend</a> from <a href="https://vimeo.com/andrescacho">Andres Cacho</a> on <a href="https://vimeo.com">Vimeo</a>.</p>   
+                </div>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+makeandmend1.jpg" alt="make and mend" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+makeandmend2.jpg" alt="make and mend" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+makeandmend3.jpg" alt="make and mend" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+makeandmend4.jpg" alt="make and mend" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+makeandmend5.jpg" alt="make and mend" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://www.bartlehalpinphotography.co.uk/" target="_blank">Bartle Halpin Photography</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+makeandmend7.jpg" alt="make and mend" width="100%"><p style="text-align:right; font-size:0.8em">©Global Art Joint Curriculum 2017 between <a href="http://www.arts.ac.uk/csm/" target="_blank">Central Saint Martins, University of the Arts London</a> and <a href="http://www.geidai.ac.jp/english/" target="_blank">Tokyo University of the Arts</a></p>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+makeandmend6.jpg" alt="make and mend" width="100%"><p style="text-align:right; font-size:0.8em"><a href="http://www.bartlehalpinphotography.co.uk/" target="_blank">Bartle Halpin Photography</a></p>
             </div>
         </div>
 
@@ -315,15 +325,15 @@
 
         <div class="mix agathisdeconstruction individual">
             <div class="about">
-                <div class="title">アガチス解体<br><br>2017</div>
+                <div class="title">アガチス解体<br>2017</div>
                 <div class="content"><br>クラフトはほとんど無意識に繰り返していると定義されているが、私はそれを信じていません。
                 <br>この作品ではカンナの使い方を練習しながら木材を分解し、木材の木目を見せるだけでなく、クラフトと美術の境界を伝えたい。</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+agathisdeconstruction0.jpg" alt="agathis deconstruction" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+agathisdeconstruction1.jpg" alt="agathis deconstruction" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+agathisdeconstruction2.jpg" alt="agathis deconstruction" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+agathisdeconstruction3.jpg" alt="agathis deconstruction" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+agathisdeconstruction4.jpg" alt="agathis deconstruction" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+agathisdeconstruction5.jpg" alt="agathis deconstruction" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+agathisdeconstruction0.jpg" alt="agathis deconstruction" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+agathisdeconstruction1.jpg" alt="agathis deconstruction" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+agathisdeconstruction2.jpg" alt="agathis deconstruction" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+agathisdeconstruction3.jpg" alt="agathis deconstruction" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+agathisdeconstruction4.jpg" alt="agathis deconstruction" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+agathisdeconstruction5.jpg" alt="agathis deconstruction" width="100%">
             </div>
         </div>
 
@@ -331,13 +341,13 @@
 
         <div class="mix hayashichair individual">
             <div class="about">
-                <div class="title">林椅子<br><br>2018</div>
-                <div class="content"><br>This chair is inspired by the ancient Japanese technique to round the huge logs used for the tori gates. The legs of the chair were hand-rounded with the Japanese kanna (Japanese woodplane)<br>It is finished with wax</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashichair1.jpg" alt="hayashisilla" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashichair2.jpg" alt="hayashisilla" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashichair3.jpg" alt="hayashisilla" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashichair4.jpg" alt="hayashisilla" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+hayashichair5.jpg" alt="hayashisilla" width="100%">
+                <div class="title">林椅子<br>2018</div>
+                <div class="content"><br>鳥居の柱を丸くする伝統的なやり方を触発されました。椅子の足は鉋で手作っています。カラマツで作ってワックスで仕上げしています。</div>
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashichair1.jpg" alt="hayashisilla" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashichair2.jpg" alt="hayashisilla" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashichair3.jpg" alt="hayashisilla" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashichair4.jpg" alt="hayashisilla" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+hayashichair5.jpg" alt="hayashisilla" width="100%">
             </div>
         </div>
 
@@ -345,17 +355,17 @@
 
         <div class="mix kumitate individual">
             <div class="about">
-                <div class="title">クミタテ・スツール<br><br>2018</div>
+                <div class="title">クミタテ・スツール<br>2018</div>
                 <div class="content"><br><a href="http://www.tsumiki.net/" target="_blank" style="text-decoration: underline">つみ木家具店</a>と一緒に作ったスツール。一週間で家具の作ることと家具店の経営を学びながらスツールをデサインして作りました。軽くて(1.3kg)組み立てるスツールです。小さなトートバッグで持って行けます。的確な組み手で強くなっています。タモの色を守るために石鹸で仕上げしています。</div>
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate0.gif" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate1.jpg" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate2.jpg" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate3.jpg" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate4.jpg" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate5.jpg" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate6.jpg" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate7.jpg" alt="kumitate_stool" width="100%">
-                <br><img class="thumbnail" src="./img/andrescacho+portfolio+kumitate8.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate0.gif" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate1.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate2.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate3.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate4.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate5.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate6.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate7.jpg" alt="kumitate_stool" width="100%">
+                <br><img class="contentimage" src="./img/andrescacho+portfolio+kumitate8.jpg" alt="kumitate_stool" width="100%">
             </div>
         </div>
 
@@ -363,52 +373,52 @@
 
         <div class="mix molinillos individual">
             <div class="about">
-                <div class="title">モリニジョス<br><br>2018</div>
+                <div class="title">モリニジョス<br>2018</div>
                 <div class="content"><br>「モリニジョ」は元来メキシコにありましたがスペイン入植時に変化をとげそれ以来変化をせずにあるココアを作るための道具です。<br>私がこの作品でやりたいことはモリニジョの機能を取り外し、それを彫刻作品にする実践である。　このオブジェクトは素材と作り方と形を探りながらアートとクラフトの間を可視化します。</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn1.jpg" alt="molinillo1" width="100%"><div class="content"><br>Molinillo 1<br>トチノキ<br>33x7x7cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn2.jpg" alt="molinillo2" width="100%"><div class="content"><br>Molinillo 2<br>トチノキ<br>24x7x7cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn3.jpg" alt="molinillo3" width="100%"><div class="content"><br>Molinillo 3<br>トチノキ<br>31x7x7cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn4.jpg" alt="molinillo4" width="100%"><div class="content"><br>Molinillo 4<br>トチノキ<br>27x6.5x6.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn5.jpg" alt="molinillo5" width="100%"><div class="content"><br>Molinillo 5<br>トチノキ<br>35x8x8cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn6.jpg" alt="molinillo6" width="100%"><div class="content"><br>Molinillo 6<br>トチノキ<br>27x6.5x6.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn7.jpg" alt="molinillo7" width="100%"><div class="content"><br>Molinillo 7<br>トチノキ<br>17.5x6.5x6.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn8.jpg" alt="molinillo8" width="100%"><div class="content"><br>Molinillo 8<br>トチノキ、漆<br>19x8x8cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn9.jpg" alt="molinillo9" width="100%"><div class="content"><br>Molinillo 9<br>トチノキ<br>23x7.5x7.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn10.jpg" alt="molinillo10" width="100%"><div class="content"><br>Molinillo 10<br>トチノキ<br>29.5x8x8cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn11.jpg" alt="molinillo11" width="100%"><div class="content"><br>Molinillo 11<br>トチノキ<br>35x7.5x7.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn12.jpg" alt="molinillo12" width="100%"><div class="content"><br>Molinillo 12<br>オーク<br>19x4.5x4.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn13.jpg" alt="molinillo13" width="100%"><div class="content"><br>Molinillo 13<br>オーク<br>17x3.5x3.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn14.jpg" alt="molinillo14" width="100%"><div class="content"><br>Molinillo 14<br>オーク、洋白<br>18x4x4cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn15.jpg" alt="molinillo15" width="100%"><div class="content"><br>Molinillo 15<br>ポプラ<br>33x5x5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn16.jpg" alt="molinillo16" width="100%"><div class="content"><br>Molinillo 16<br>トチノキ、洋白<br>10x7.5x7.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn17.jpg" alt="molinillo17" width="100%"><div class="content"><br>Molinillo 17<br>ケヤキ<br>28x6x6cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn18.jpg" alt="molinillo18" width="100%"><div class="content"><br>Molinillo 18<br>トチノキ<br>19x6x6cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn19.jpg" alt="molinillo19" width="100%"><div class="content"><br>Molinillo 19<br>オーク<br>24x4x4cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn20.jpg" alt="molinillo20" width="100%"><div class="content"><br>Molinillo 20<br>ポプラ<br>20x5x5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn21.jpg" alt="molinillo21" width="100%"><div class="content"><br>Molinillo 21<br><br>18x4.5x4.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn22.jpg" alt="molinillo22" width="100%"><div class="content"><br>Molinillo 22<br>ケヤキ<br>25x6.5x6.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn23.jpg" alt="molinillo23" width="100%"><div class="content"><br>Molinillo 23<br>オーク<br>21.5x4x4cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn24.jpg" alt="molinillo24" width="100%"><div class="content"><br>Molinillo 24<br>オーク<br>18.7x3.6x3.6cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn25.jpg" alt="molinillo25" width="100%"><div class="content"><br>Molinillo 25<br>バードック<br>14.5x6.5x6.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn26.jpg" alt="molinillo26" width="100%"><div class="content"><br>Molinillo 26<br>オリーブ<br>14x5x5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn27.jpg" alt="molinillo27" width="100%"><div class="content"><br>Molinillo 27<br>オーク<br>6.7x3x3cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn28.jpg" alt="molinillo28" width="100%"><div class="content"><br>Molinillo 28<br>ウォールナット<br>25x7.5x7.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn29.jpg" alt="molinillo29" width="100%"><div class="content"><br>Molinillo 29<br>ポプラ<br>10x5x5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn30.jpg" alt="molinillo30" width="100%"><div class="content"><br>Molinillo 30<br>バードック<br>7x7.5x7.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn31.jpg" alt="molinillo31" width="100%"><div class="content"><br>Molinillo 31<br>ウォールナット<br>13.5x7.5x7.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn32.jpg" alt="molinillo32" width="100%"><div class="content"><br>Molinillo 32<br>ポプラ<br>45x5x5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn33.jpg" alt="molinillo33" width="100%"><div class="content"><br>Molinillo 33<br>ポプラ<br>25x6x6cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn34.jpg" alt="molinillo34" width="100%"><div class="content"><br>Molinillo 34<br>バードック<br>22.5x7x7cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn35.jpg" alt="molinillo35" width="100%"><div class="content"><br>Molinillo 35<br>トチノキ<br>12.8x7.2x7.2cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn36.jpg" alt="molinillo36" width="100%"><div class="content"><br>Molinillo 36<br>オーク<br>15.5x3.7x3.7cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn37.jpg" alt="molinillo37" width="100%"><div class="content"><br>Molinillo 37<br>バードック<br>11.3x7.3x7.3cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn38.jpg" alt="molinillo38" width="100%"><div class="content"><br>Molinillo 38<br><br>43x5.5x5.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn39.jpg" alt="molinillo39" width="100%"><div class="content"><br>Molinillo 39<br>ウォールナット<br>8.5x7.5x7.5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn40.jpg" alt="molinillo40" width="100%"><div class="content"><br>Molinillo 40<br><br>21.3x5x5cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn41.jpg" alt="molinillo41" width="100%"><div class="content"><br>Molinillo 41<br>オーク<br>22x4x4cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn42.jpg" alt="molinillo42" width="100%"><div class="content"><br>Molinillo 42<br>ケヤキ<br>18.5x6.3x6.3cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn43.jpg" alt="molinillo43" width="100%"><div class="content"><br>Molinillo 43<br>ウォールナット<br>28.5x8x8cm</div>
-                <br><img class="thumbnailv" src="./img/andrescacho+portfolio+molinillo+fn44.jpg" alt="molinillo44" width="100%"><div class="content"><br>Molinillo 44<br>ポプラ<br>13.4x4.8x4.8cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn1.jpg" alt="molinillo1" width="100%"><div class="content"><br>Molinillo 1<br>トチノキ<br>33x7x7cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn2.jpg" alt="molinillo2" width="100%"><div class="content"><br>Molinillo 2<br>トチノキ<br>24x7x7cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn3.jpg" alt="molinillo3" width="100%"><div class="content"><br>Molinillo 3<br>トチノキ<br>31x7x7cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn4.jpg" alt="molinillo4" width="100%"><div class="content"><br>Molinillo 4<br>トチノキ<br>27x6.5x6.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn5.jpg" alt="molinillo5" width="100%"><div class="content"><br>Molinillo 5<br>トチノキ<br>35x8x8cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn6.jpg" alt="molinillo6" width="100%"><div class="content"><br>Molinillo 6<br>トチノキ<br>27x6.5x6.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn7.jpg" alt="molinillo7" width="100%"><div class="content"><br>Molinillo 7<br>トチノキ<br>17.5x6.5x6.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn8.jpg" alt="molinillo8" width="100%"><div class="content"><br>Molinillo 8<br>トチノキ、漆<br>19x8x8cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn9.jpg" alt="molinillo9" width="100%"><div class="content"><br>Molinillo 9<br>トチノキ<br>23x7.5x7.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn10.jpg" alt="molinillo10" width="100%"><div class="content"><br>Molinillo 10<br>トチノキ<br>29.5x8x8cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn11.jpg" alt="molinillo11" width="100%"><div class="content"><br>Molinillo 11<br>トチノキ<br>35x7.5x7.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn12.jpg" alt="molinillo12" width="100%"><div class="content"><br>Molinillo 12<br>オーク<br>19x4.5x4.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn13.jpg" alt="molinillo13" width="100%"><div class="content"><br>Molinillo 13<br>オーク<br>17x3.5x3.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn14.jpg" alt="molinillo14" width="100%"><div class="content"><br>Molinillo 14<br>オーク、洋白<br>18x4x4cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn15.jpg" alt="molinillo15" width="100%"><div class="content"><br>Molinillo 15<br>ポプラ<br>33x5x5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn16.jpg" alt="molinillo16" width="100%"><div class="content"><br>Molinillo 16<br>トチノキ、洋白<br>10x7.5x7.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn17.jpg" alt="molinillo17" width="100%"><div class="content"><br>Molinillo 17<br>ケヤキ<br>28x6x6cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn18.jpg" alt="molinillo18" width="100%"><div class="content"><br>Molinillo 18<br>トチノキ<br>19x6x6cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn19.jpg" alt="molinillo19" width="100%"><div class="content"><br>Molinillo 19<br>オーク<br>24x4x4cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn20.jpg" alt="molinillo20" width="100%"><div class="content"><br>Molinillo 20<br>ポプラ<br>20x5x5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn21.jpg" alt="molinillo21" width="100%"><div class="content"><br>Molinillo 21<br><br>18x4.5x4.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn22.jpg" alt="molinillo22" width="100%"><div class="content"><br>Molinillo 22<br>ケヤキ<br>25x6.5x6.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn23.jpg" alt="molinillo23" width="100%"><div class="content"><br>Molinillo 23<br>オーク<br>21.5x4x4cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn24.jpg" alt="molinillo24" width="100%"><div class="content"><br>Molinillo 24<br>オーク<br>18.7x3.6x3.6cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn25.jpg" alt="molinillo25" width="100%"><div class="content"><br>Molinillo 25<br>バードック<br>14.5x6.5x6.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn26.jpg" alt="molinillo26" width="100%"><div class="content"><br>Molinillo 26<br>オリーブ<br>14x5x5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn27.jpg" alt="molinillo27" width="100%"><div class="content"><br>Molinillo 27<br>オーク<br>6.7x3x3cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn28.jpg" alt="molinillo28" width="100%"><div class="content"><br>Molinillo 28<br>ウォールナット<br>25x7.5x7.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn29.jpg" alt="molinillo29" width="100%"><div class="content"><br>Molinillo 29<br>ポプラ<br>10x5x5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn30.jpg" alt="molinillo30" width="100%"><div class="content"><br>Molinillo 30<br>バードック<br>7x7.5x7.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn31.jpg" alt="molinillo31" width="100%"><div class="content"><br>Molinillo 31<br>ウォールナット<br>13.5x7.5x7.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn32.jpg" alt="molinillo32" width="100%"><div class="content"><br>Molinillo 32<br>ポプラ<br>45x5x5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn33.jpg" alt="molinillo33" width="100%"><div class="content"><br>Molinillo 33<br>ポプラ<br>25x6x6cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn34.jpg" alt="molinillo34" width="100%"><div class="content"><br>Molinillo 34<br>バードック<br>22.5x7x7cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn35.jpg" alt="molinillo35" width="100%"><div class="content"><br>Molinillo 35<br>トチノキ<br>12.8x7.2x7.2cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn36.jpg" alt="molinillo36" width="100%"><div class="content"><br>Molinillo 36<br>オーク<br>15.5x3.7x3.7cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn37.jpg" alt="molinillo37" width="100%"><div class="content"><br>Molinillo 37<br>バードック<br>11.3x7.3x7.3cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn38.jpg" alt="molinillo38" width="100%"><div class="content"><br>Molinillo 38<br><br>43x5.5x5.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn39.jpg" alt="molinillo39" width="100%"><div class="content"><br>Molinillo 39<br>ウォールナット<br>8.5x7.5x7.5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn40.jpg" alt="molinillo40" width="100%"><div class="content"><br>Molinillo 40<br><br>21.3x5x5cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn41.jpg" alt="molinillo41" width="100%"><div class="content"><br>Molinillo 41<br>オーク<br>22x4x4cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn42.jpg" alt="molinillo42" width="100%"><div class="content"><br>Molinillo 42<br>ケヤキ<br>18.5x6.3x6.3cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn43.jpg" alt="molinillo43" width="100%"><div class="content"><br>Molinillo 43<br>ウォールナット<br>28.5x8x8cm</div>
+                <br><img class="contentimagevertical" src="./img/andrescacho+portfolio+molinillo+fn44.jpg" alt="molinillo44" width="100%"><div class="content"><br>Molinillo 44<br>ポプラ<br>13.4x4.8x4.8cm</div>
 
             </div>
         </div>
